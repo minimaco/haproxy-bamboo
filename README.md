@@ -1,5 +1,6 @@
 # haproxy-bamboo
 #run haproxy-bamboo image as follow
+
 以下启动haproxy-bamboo镜像执行的docker run命令范例
 
 docker run -it --net=host --restart=always --name bamboo  \
