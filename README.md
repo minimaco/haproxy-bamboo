@@ -1,5 +1,6 @@
 # haproxy-bamboo
 run haproxy-bamboo image as follow
+
 	docker run -it --net=host --restart=always --name bamboo  \
 		--log-opt max-file=10 --log-opt max-size=20k \
 		-e MARATHON_ENDPOINT=http://192.168.10.118:8443 \
