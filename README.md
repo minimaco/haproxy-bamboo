@@ -1,5 +1,6 @@
 # haproxy-bamboo
-run haproxy-bamboo image as follow
+#run haproxy-bamboo image as follow
+以下启动haproxy-bamboo镜像执行的docker run命令范例
 
 docker run -it --net=host --restart=always --name bamboo  \
 	--log-opt max-file=10 --log-opt max-size=20k \
@@ -18,4 +19,4 @@ docker run -it --net=host --restart=always --name bamboo  \
 	-e BAMBOO_TYPE=bamboo-https \
 	-e HAPROXY_PROXY_PORT=443 \
 	-v /applog/bamboo:/opt/bamboo/logs:rw \
-	haproxy:2.2 /docker-entrypoint.sh
+	haproxy:2.2
